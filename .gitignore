@@ -28,3 +28,10 @@ hs_err_pid*
 .idea/modules.xml
 vcs.xml
 workspace.xml
+artifacts
+compiler.xml
+description.html
+encodings.xml
+gradle.xml
+modules.xml
+uiDesigner.xml
