@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="190.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <GridPane layoutX="33.0" layoutY="37.0" prefHeight="143.0" prefWidth="462.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="69.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="168.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="224.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+            </TextField>
+            <Label textFill="#e00404" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" text="Save">
+                     <font>
+                        <Font name="JetBrains Mono Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Cancel">
+                     <font>
+                        <Font name="JetBrains Mono Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="15.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
