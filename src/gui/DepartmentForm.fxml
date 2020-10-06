@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="190.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+<AnchorPane prefHeight="190.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentFormController">
    <children>
       <GridPane layoutX="33.0" layoutY="37.0" prefHeight="143.0" prefWidth="462.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
         <columnConstraints>
@@ -36,29 +35,29 @@
                   <Font name="JetBrains Mono Regular" size="14.0" />
                </font>
             </Label>
-            <TextField editable="false" GridPane.columnIndex="1">
+            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1">
                <font>
                   <Font name="JetBrains Mono Regular" size="14.0" />
                </font>
             </TextField>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="JetBrains Mono Regular" size="14.0" />
                </font>
             </TextField>
-            <Label textFill="#e00404" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="labelErrorName" textFill="#e00404" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="JetBrains Mono Regular" size="14.0" />
                </font>
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" text="Save">
+                  <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save">
                      <font>
                         <Font name="JetBrains Mono Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" text="Cancel">
+                  <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel">
                      <font>
                         <Font name="JetBrains Mono Bold" size="13.0" />
                      </font>
