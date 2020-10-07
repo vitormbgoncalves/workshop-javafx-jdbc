@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -23,6 +24,8 @@ public class Main extends Application {
 
             mainScene = new Scene(scrollPane);
             primaryStage.setScene(mainScene);
+            primaryStage.getIcons().add(new Image("/assets/icon.png"));
+            primaryStage.setMaximized(true);
             primaryStage.setTitle("Sample JavaFX application");
             primaryStage.show();
         } catch (IOException e) {
