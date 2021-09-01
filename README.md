@@ -7,20 +7,20 @@ O objetivo deste projeto foi estudar o uso do JavaFX para implementação de apl
 
 ## Execução
 
-1. Clone o projeto git através do terminal;
+1. Clone o projeto git através do terminal:
 
 ```shell
 git clone https://github.com/vitormbgoncalves/workshop-javafx-jdbc.git
 cd workshop-javafx-jdbc/src
 ```
 
-2. Para compilar o código do projeto execute o comando abaixo;
+2. Para compilar o código do projeto execute o comando abaixo:
 
 ```shell
 javac --module-path D:\javafx-sdk-13.0.2\lib --add-modules javafx.controls Main.java
 ```
 
-3. Para rodar a aplicação execute o comando abaixo;
+3. Para rodar a aplicação execute o comando abaixo:
 
 ```shell
 java --module-path D:\javafx-sdk-13.0.2\lib --add-modules javafx.controls Main
